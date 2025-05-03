@@ -18,7 +18,7 @@ Stwórz scenariusz morderstwa w stylu Agathy Christie. Zawiera:
     const completion = await openai.chat.completions.create({
       model: "gpt-4",
       messages: [{ role: "user", content: prompt }],
-      max_tokens: 700
+      max_tokens: 1500
     });
 
     const result = completion.choices[0].message.content;
